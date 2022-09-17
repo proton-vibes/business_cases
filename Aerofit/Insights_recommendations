@@ -1,0 +1,73 @@
+Problem statement and basic analysis:
+a.     Analyze the last 3 months sales data for the 3 treadmills sold by Aerofit. Look at the treadmills and find if there are characteristics of customers that are more aligned with either of the treadmills.
+
+b.     It would be nice to have a set of features of customers that are more inclined to buy different treadmills which will eventually help in making more targeted product recommendations.
+
+c.     The data has 180 records and 9 features with no null values.
+
+d.     The datatypes look proper. All the expected numerical values are ‘int’ and strings are ‘object’.
+
+ 
+
+Value counts and unique attributes:
+a.     The data contains 3 treadmills sales diversified over 2 unique genders (58% males and 42% females) divided over 2 unique marital statuses (59% partnered and 41% single).
+
+b.     Around 44% of people bought KP281, 33% bought KP481 and 22% bought KP781
+
+ 
+
+Outliers:
+a.     From the boxplots, one can observe more outliers in Miles (7.2%) and Income (25%) than other features. Both are right-skewed as can be seen from the boxplots and the mean and median values. The mean is higher than the median value.
+
+b.     No values are missing in the data.
+
+ 
+
+Business insights based on range of attributes, non-graphical and visual analysis:
+a.     Miles and usage seem to be correlated both from the correlation values as well as the scatter plot. It makes sense as the number of times per week usage is more, the miles clocked should be higher.
+
+b.     Same is true for miles vs fitness (although this should be read with a grain of salt, it might not always be true).
+
+c.     58% of males (104/180) vs 42% (76/180) females have brought the treadmills in the last 3 months. Males seem to be more active in terms of buying the aerofit treadmills.
+
+d.     There is an almost equal preference for KP281 and KP481 among males and females, however,  KP781 is a more popular choice among males (33 for males vs 7 for females) as well as higher income folks.
+
+e.     There is higher variability in the income for KP781 group than the other two. The IQR of income for males and females buying the KP781 treadmill is not very significant yet only 17% of total folks buying KP781 are females.
+
+f.       
+
+g.     Lower priced treadmill KP281 is sold twice as much as the highest-priced KP781 (80 vs 40).
+
+h.     The sale distribution among partnered and single people is 60% KP281, 60% KP481, and 58% KP781 for partnered customers. Clearly, partnered individuals have bought more treadmills than single across all 3 categories.
+
+i.      Aerofit customer base mainly consists of people who think they are moderately fit (fitness rating 3, 54%) followed by people who rate themselves 5 (17%).
+
+j.      Folks spending more on the treadmill also expect themselves to utilise more as more miles are recorded for KP781 than the other two.
+
+k.     Usage and miles are correlated as seen earlier in the correlation pair plots. People who intend to use more times per week recorded more miles.
+
+l.      Across all 3 treadmills, people who rate themselves higher on the fitness scale are putting higher expected miles to walk/run per week.
+
+m.   Age doesn't seem to influence the type of treadmill bought by the customers.
+
+n.     The median years of education of people buying KP781 is 18 years (for 40 people) which is higher than for the other two treadmills (16 years).
+
+ 
+
+Recommendations:
+a.     There are 16% more males in the customer base of Aerofit as compared to females. This difference majorly comes from the difference in the sale of premium range treadmill (KP781). For the other two treadmills (KP281 and KP481), the buying ratio of males to females is almost equal but not for KP781 (82.5 % males vs 17.5 % females). Understanding why KP781 is more appealing to males than females is recommended.
+
+b.     75% of KP781 is bought by people having an income of at least $60,000. Targeting females beyond this income range would be useful. Also, providing EMI options for KP781 might make it more accessible for relatively lower-income groups.
+
+c.     The revenue for KP281 is only $20000 more than KP781 in the last 3 months however, the units sold for KP281 is twice as much as of KP781. If Aerofit could sell just 8 more units of KP781 (or 6 more if compared with KP481), it would have generated the same revenue as KP281. In other words, it would be worthwhile to invest in increasing the sale of KP781 tying back to the previous points.
+
+d.     Partnered customers have a higher probability of getting a treadmill as compared to single individuals. Could offer higher discounts for single individuals on their birthdays to promote sales among this group. Also, call partnered individuals on anniversaries to offer discounts.
+
+e.     Aerofit is poorly represented among people who rate themselves 1 (just 1%) on the fitness scale. There is a great opportunity to increase sales. Should run fitness campaigns and then promote products in the campaign. Perhaps, give on spot reduced prices to people who attend it.
+
+Treadmill profile for targeted recommendation:
+                                               i.     In general, KP781 is popular among males, higher income ($60000 to $90000) group, fitness rating of 5, and expect to use it 4 to 7 times per week.
+
+                                             ii.     KP281 is equally preferred between males and females but more among partnered individuals or people who rate themselves 2, 3 or 4 on the fitness scale, expected usage of 2 – 5 times per week, income range of $40000 to $50000. Almost similar attributes are also for customers to recommend KP481. It will come down to a matter of personal choice of the customer.
+
+                                           iii.     Age or level of education can be disregarded while making the recommendation of treadmills.
